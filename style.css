@@ -294,6 +294,7 @@ span{
 }
 .timeline-item:nth-child(even){
     padding-right: calc(50% + 30px);
+    /* text-align: left; */
 }
 .timeline-dot{
     height: 21px;
@@ -323,7 +324,7 @@ span{
 }
 .timeline-content:hover{
     transform: scale(1.05);
-    box-shadow: 0 0  25px var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
 }
 .timeline-content h3{
     font-size: 20px;
@@ -361,7 +362,7 @@ span{
     align-items: center;
     gap: 2.5rem;
 }
-.services-box{
+.service-box{
     background-color: var(--main-color);
     height: 300px;
     border-radius: 3rem;
@@ -369,13 +370,13 @@ span{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.services-box:hover{
+.service-box:hover{
     background: white;
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.services-box .service-info{
+.service-box .service-info{
     display: flex;
     flex-direction: column;
     text-align: left;
