@@ -1,268 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive Portfolio Website</title>
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Yankho Chantel Maria <span>Saliji</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Yauncai</span></h1>
+            <h3 class="text-animation"> I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sapiente repellendus aspernatur quis distinctio officiis, ipsa aliquid, 
+                voluptatem eius pariatur maiores vitae ad neque aut, inventore odit eos. 
+                Perspiciatis, dolores? Ullam.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yankho-chantel-maria-saliji" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/21Saliji" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://github.com/Yauncai" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="image.jpg" alt="">
+        </div>
+    </section>
 
-        <header class="header">
-            <a href="#home" class="logo">Yankho Chantel Maria
-                <!-- Yankho Chantel Maria Saliji -->
-                <span>Saliji</span></a>
-
-                <i class='bx bx-menu' id="menu-icon"></i>
-
-                <nav class="navbar">
-                    <a href="#home" class="active">Home</a>
-                    <a href="#education">Education</a>
-                    <a href="#services">Services</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-        </header>
-
-        <section class="home" id="home"> 
-            <div class="home-content">
-                <h1>Hi, It's <span>Yauncai</span></h1>
-                <h3 class="text-animation"> I'm a <span></span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sapiente repellendus aspernatur quis distinctio officiis, ipsa aliquid, 
-                    voluptatem eius pariatur maiores vitae ad neque aut, inventore odit eos. 
-                    Perspiciatis, dolores? Ullam.</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/yankho-chantel-maria-saliji" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/21Saliji" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://github.com/Yauncai" target="_blank"><i class='bx bxl-github'></i></a>
-
-                        <!-- <a href="#"><i class='bx bxl-twitter'></i></a> -->
-                        <!-- <a href="#"><i class='bx bxl-facebook'></i></a> -->
-                    </div>
-
-                    <div class="btn-group">
-                        <a href="#" class="btn">Hire</a>
-                        <a href="#contact" class="btn">Contact</a>
-                    </div>
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h3>High School</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi voluptatibus iusto iure dicta quaerat! Veritatis porro suscipit iste magni. 
+                        Quaerat quidem laboriosam est accusantium nobis consectetur, sapiente ullam harum praesentium!</p>
                 </div>
-                    <div class="home-img">
-                        <!-- add image of yourself -->
-                            <img src="image.jpg" alt="">
-                    </div>
-            </section>
-
-
-            <section class="education" id="education">
-                <h2 class="heading">Education</h2>
-
-                <div class="timeline-items">
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                            <div class="timeline-date">2020</div>
-                            <div class="timeline-content">
-                                <h3>High School</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Sequi voluptatibus iusto iure dicta quaerat! Veritatis porro suscipit iste magni. 
-                                    Quaerat quidem laboriosam est accusantium nobis consectetur, sapiente ullam harum praesentium!</p>
-                            </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                            <div class="timeline-date">2023</div>
-                            <div class="timeline-content">
-                                <h3>Learnership</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Sequi voluptatibus iusto iure dicta quaerat! Veritatis porro suscipit iste magni. 
-                                    Quaerat quidem laboriosam est accusantium nobis consectetur, sapiente ullam harum praesentium!</p>
-                            </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                            <div class="timeline-date">2024</div>
-                            <div class="timeline-content">
-                                <h3>Internship</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Sequi voluptatibus iusto iure dicta quaerat! Veritatis porro suscipit iste magni. 
-                                    Quaerat quidem laboriosam est accusantium nobis consectetur, sapiente ullam harum praesentium!</p>
-                            </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                            <div class="timeline-date">2025</div>
-                            <div class="timeline-content">
-                                <h3>Job 1</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Sequi voluptatibus iusto iure dicta quaerat!
-                                     Veritatis porro suscipit iste magni. 
-                                    Quaerat quidem laboriosam est accusantium nobis consectetur, 
-                                    sapiente ullam harum praesentium!</p>
-                            </div>
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Learnership</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi voluptatibus iusto iure dicta quaerat! Veritatis porro suscipit iste magni. 
+                        Quaerat quidem laboriosam est accusantium nobis consectetur, sapiente ullam harum praesentium!</p>
                 </div>
-            </section>
-            <section class="services" id="services">
-                <h2 class="heading">Services</h2>
-
-                <div class="services-container">
-                    <div class="service-box">
-                    <div class="service-info">
-                        <h4>Software Development</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
-                            Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
-                    </div>
-                    </div>
-
-                    <div class="service-box">
-                    <div class="service-info">
-                        <h4>Quant</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
-                            Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
-                    </div>
-                    </div>
-
-        
-                    <div class="service-box">
-                    <div class="service-info">
-                        <h4>Software Engineer</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
-                            Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
-                    </div>
-                    </div>
-
-                        
-                    <div class="service-box">
-                    <div class="service-info">
-                        <h4> Backend Development</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
-                            Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
-                    </div>
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Internship</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi voluptatibus iusto iure dicta quaerat! Veritatis porro suscipit iste magni. 
+                        Quaerat quidem laboriosam est accusantium nobis consectetur, sapiente ullam harum praesentium!</p>
                 </div>
-            </section>
-
-            <section class="testimonials" id="testimonials">
-                <div class="testimonials-box">
-                    <h2 class="heading">Testimonials</h2>
-                    <div class="wrapper">
-                        <div class="testimonial-item">
-                            <!-- imsert image -->
-                            <img src="" alt="">
-                            <h2>Name</h2>
-                            <div class="rating">
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quis porro fuga inventore voluptatibus? Hic, voluptatum praesentium. Veritatis, alias quasi vel aut eos, sit ab repellendus ex ad dolor excepturi.</p>
-                        </div>
-
-                        <div class="testimonial-item">
-                            <!-- imsert image -->
-                            <img src="" alt="">
-                            <h2>Name</h2>
-                            <div class="rating">
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quis porro fuga inventore voluptatibus? Hic, voluptatum praesentium. Veritatis, alias quasi vel aut eos, sit ab repellendus ex ad dolor excepturi.</p>
-                        </div>
-
-                        <div class="testimonial-item">
-                            <!-- imsert image -->
-                            <img src="" alt="">
-                            <h2>Name</h2>
-                            <div class="rating">
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-                                <i class='bx bxs-star' id="star"></i>
-
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quis porro fuga inventore voluptatibus? Hic, voluptatum praesentium. Veritatis, alias quasi vel aut eos, sit ab repellendus ex ad dolor excepturi.</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Job 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sequi voluptatibus iusto iure dicta quaerat!
+                        Veritatis porro suscipit iste magni. 
+                        Quaerat quidem laboriosam est accusantium nobis consectetur, 
+                        sapiente ullam harum praesentium!</p>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <section class="contact" id="contact">
-                <h2 class="heading">Contact <span>Me</span></h2>
-                
-                <form id="contact-form" >
-                    <div class="input-group">
-                        <div class="input-box">
-                            <input type="text" name="name" placeholder="Full Name">
-                            <input type="email" name="email" placeholder="Email">
-                        </div>
-                        <div class="input-box">
-                            <input type="number" name="phone" placeholder="Phone Number">
-                            <input type="text" name="subject" placeholder="Subject">
-                        </div>
-                    </div>
-
-                    <div class="input-group-2">
-                        <textarea name="message" id="" cols="30" rows="10"
-                        placeholder="Your Message"></textarea>
-                        <input type="submit" value="Send Message" class="btn">
-                    </div>
-                </form>
-
-                <div id="thankyou-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
-    <div style="background:#fff; color:#333; padding:2rem 3rem; border-radius:1rem; text-align:center; max-width:90vw;">
-        <h2>Thank You!</h2>
-        <p>Your message has been sent successfully.<br>I'll get back to you soon.</p>
-        <button onclick="document.getElementById('thankyou-popup').style.display='none'" style="margin-top:1rem; padding:0.5rem 2rem; border:none; background:#A259FF; color:#fff; border-radius:0.5rem; cursor:pointer;">Close</button>
-    </div>
-</div>
-            </section>
-
-            <footer class="footer">
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/yankho-chantel-maria-saliji" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/21Saliji" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://github.com/Yauncai" target="_blank"><i class='bx bxl-github'></i></a>
-
-                    <!-- <a href="#"><i class='bx bxl-twitter'></i></a> -->
-                    <!-- <a href="#"><i class='bx bxl-facebook'></i></a> -->
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Software Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
+                        Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
                 </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Quant</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
+                        Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Software Engineer</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
+                        Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Backend Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Ipsum, impedit incidunt magnam nam cumque eligendi ratione neque. 
+                        Magni sapiente eos nemo odio laudantium possimus voluptas delectus distinctio, mollitia cum temporibus!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <ul class="list">
-                    <li>
-                        <a href="#home">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#home">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#testimonials">Testimonials</a>
-                    </li>
-                </ul>
-                <p class="copyright">
-                    &copy; 2024 Yankho Chantel Maria Saliji | All Rights Reserved
-                </p>
-                
-            </footer>
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-box">
+            <h2 class="heading">Testimonials</h2>
+            <div class="wrapper">
+                <div class="testimonial-item">
+                    <img src="" alt="">
+                    <h2>Name</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quis porro fuga inventore voluptatibus? Hic, voluptatum praesentium. Veritatis, alias quasi vel aut eos, sit ab repellendus ex ad dolor excepturi.</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="" alt="">
+                    <h2>Name</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quis porro fuga inventore voluptatibus? Hic, voluptatum praesentium. Veritatis, alias quasi vel aut eos, sit ab repellendus ex ad dolor excepturi.</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="" alt="">
+                    <h2>Name</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quis porro fuga inventore voluptatibus? Hic, voluptatum praesentium. Veritatis, alias quasi vel aut eos, sit ab repellendus ex ad dolor excepturi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+        <div id="thankyou-popup">
+            <div class="popup-content">
+                <h2>Thank You!</h2>
+                <p>Your message has been sent successfully.<br>I'll get back to you soon.</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/yankho-chantel-maria-saliji" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/21Saliji" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://github.com/Yauncai" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#home">FAQ</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#home">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+        <p class="copyright">
+            &copy; 2024 Yankho Chantel Maria Saliji | All Rights Reserved
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="config.js"></script>
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
