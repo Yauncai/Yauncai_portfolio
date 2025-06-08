@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive Portfolio Website</title>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -201,7 +202,7 @@
             <section class="contact" id="contact">
                 <h2 class="heading">Contact <span>Me</span></h2>
                 
-                <form id="contact-form" action="https://formspree.io/f/xldnjroy" method="POST">
+                <form id="contact-form" >
                     <div class="input-group">
                         <div class="input-box">
                             <input type="text" name="name" placeholder="Full Name">
@@ -219,12 +220,21 @@
                         <input type="submit" value="Send Message" class="btn">
                     </div>
                 </form>
+
+                <div id="thankyou-popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+    <div style="background:#fff; color:#333; padding:2rem 3rem; border-radius:1rem; text-align:center; max-width:90vw;">
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully.<br>I'll get back to you soon.</p>
+        <button onclick="document.getElementById('thankyou-popup').style.display='none'" style="margin-top:1rem; padding:0.5rem 2rem; border:none; background:#A259FF; color:#fff; border-radius:0.5rem; cursor:pointer;">Close</button>
+    </div>
+</div>
             </section>
 
             <footer class="footer">
                 <div class="social">
                     <a href="https://www.linkedin.com/in/yankho-chantel-maria-saliji" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/21Saliji" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://github.com/Yauncai" target="_blank"><i class='bx bxl-github'></i></a>
 
                     <!-- <a href="#"><i class='bx bxl-twitter'></i></a> -->
                     <!-- <a href="#"><i class='bx bxl-facebook'></i></a> -->
@@ -232,19 +242,19 @@
 
                 <ul class="list">
                     <li>
-                        <a href="#">FAQ</a>
+                        <a href="#home">FAQ</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#">About Me</a>
+                        <a href="#home">About Me</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#">Testimonials</a>
+                        <a href="#testimonials">Testimonials</a>
                     </li>
                 </ul>
                 <p class="copyright">
@@ -252,6 +262,7 @@
                 </p>
                 
             </footer>
-        <script src="script.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>
